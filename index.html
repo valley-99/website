@@ -1,347 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080e1c">
-  <title>CA Nitin Murarka | Index Trading</title>
-  <meta name="description" content="Join our Telegram community for index trading education and market insights.">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080e1c">
+    <title>CA Nitin Murarka | Index Trading</title>
+    <meta name="description" content="Join our Telegram community for index trading education and market insights.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #080e1c;
-      color: #fff;
-      line-height: 1.6;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            background: #080e1c;
+            color: #fff;
+            line-height: 1.6;
+        }
 
-    .container {
-      width: min(100% - 32px, 900px);
-      margin:   auto;
-    }
+        .container {
+            width: min(100% - 32px, 900px);
+            margin: auto;
+        }
 
-    header {
-      padding: 22px 0;
-      border-bottom: 1px solid #233047;
-    }
+        header {
+            padding: 22px 0;
+            border-bottom: 1px solid #233047;
+        }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 800;
-      letter-spacing: 1px;
-    }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
 
-    .logo {
-      background: #16c784;
-      color: #07140f;
-      padding: 10px;
-      border-radius: 12px;
-      font-size: 22px;
-    }
+        .logo {
+            background: #16c784;
+            color: #07140f;
+            padding: 10px;
+            border-radius: 12px;
+            font-size: 22px;
+        }
 
-    .hero {
-      text-align: center;
-      padding: 70px 0 50px;
-    }
+        .hero {
+            text-align: center;
+            padding: 70px 0 50px;
+        }
 
-    .tag {
-      display: inline-block;
-      color: #16c784;
-      border: 1px solid #16c784;
-      padding: 6px 14px;
-      border-radius: 30px;
-      font-size: 12px;
-      font-weight: bold;
-      margin-bottom: 22px;
-    }
+        .tag {
+            display: inline-block;
+            color: #16c784;
+            border: 1px solid #16c784;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 22px;
+        }
 
-    h1 {
-      font-size: clamp(34px, 6vw, 58px);
-      line-height: 1.15;
-      margin-bottom: 20px;
-    }
+        h1 {
+            font-size: clamp(34px, 6vw, 58px);
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
 
-    h1 span {
-      color: #16c784;
-    }
+        h1 span {
+            color: #16c784;
+        }
 
-    .hero p {
-      max-width: 620px;
-      margin: 0 auto 28px;
-      color: #b5c1d3;
-      font-size: 17px;
-    }
+        .hero p {
+            max-width: 620px;
+            margin: 0 auto 28px;
+            color: #b5c1d3;
+            font-size: 17px;
+        }
 
-    .btn {
-      display: inline-block;
-      text-decoration: none;
-      background: #16c784;
-      color: #061a11;
-      font-weight: bold;
-      padding: 15px 28px;
-      border-radius: 10px;
-      transition: 0.2s;
-    }
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: #16c784;
+            color: #061a11;
+            font-weight: bold;
+            padding: 15px 28px;
+            border-radius: 10px;
+            transition: 0.2s;
+        }
 
-    .btn:hover {
-      background: #39e69e;
-      transform: translateY(-2px);
-    }
+        .btn:hover {
+            background: #39e69e;
+            transform: translateY(-2px);
+        }
 
-    .note {
-      color: #94a3b8;
-      font-size: 12px;
-      margin-top: 14px;
-    }
+        .note {
+            color: #94a3b8;
+            font-size: 12px;
+            margin-top: 14px;
+        }
 
-    .chart {
-      margin: 25px auto 0;
-      max-width: 700px;
-      padding: 24px;
-      border: 1px solid #26364e;
-      border-radius: 18px;
-      background:
-        radial-gradient(ellipse at top, #17352f, transparent 65%),
-        #101a2b;
-    }
+        .chart {
+            margin: 25px auto 0;
+            max-width: 700px;
+            padding: 24px;
+            border: 1px solid #26364e;
+            border-radius: 18px;
+            background:
+                radial-gradient(ellipse at top, #17352f, transparent 65%),
+                #101a2b;
+        }
 
-    .chart-title {
-      color: #aab8cc;
-      font-size: 13px;
-      margin-bottom: 20px;
-    }
+        .chart-title {
+            color: #aab8cc;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
 
-    .candles {
-      height: 115px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      overflow: hidden;
-    }
+        .candles {
+            height: 115px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            overflow: hidden;
+        }
 
-    .candle {
-      position: relative;
-      width: 12px;
-      border-radius: 2px;
-      background: #16c784;
-    }
+        .candle {
+            position: relative;
+            width: 12px;
+            border-radius: 2px;
+            background: #16c784;
+        }
 
-    .candle::before {
-      content: "";
-      position: absolute;
-      width: 2px;
-      height: 150%;
-      background: inherit;
-      left: 5px;
-      top: -25%;
-    }
+        .candle::before {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 150%;
+            background: inherit;
+            left: 5px;
+            top: -25%;
+        }
 
-    .candle.red {
-      background: #ff647c;
-    }
+        .candle.red {
+            background: #ff647c;
+        }
 
-    .section {
-      padding: 40px 0;
-    }
+        .section {
+            padding: 40px 0;
+        }
 
-    h2 {
-      font-size: 28px;
-      text-align: center;
-      margin-bottom: 26px;
-    }
+        h2 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 26px;
+        }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
 
-    .card {
-      padding: 23px;
-      background: #111d2f;
-      border: 1px solid #26364e;
-      border-radius: 14px;
-    }
+        .card {
+            padding: 23px;
+            background: #111d2f;
+            border: 1px solid #26364e;
+            border-radius: 14px;
+        }
 
-    .card .icon {
-      font-size: 28px;
-    }
+        .card .icon {
+            font-size: 28px;
+        }
 
-    .card h3 {
-      margin: 12px 0 8px;
-      font-size: 17px;
-    }
+        .card h3 {
+            margin: 12px 0 8px;
+            font-size: 17px;
+        }
 
-    .card p {
-      font-size: 14px;
-      color: #aab8cc;
-    }
+        .card p {
+            font-size: 14px;
+            color: #aab8cc;
+        }
 
-    .join {
-      text-align: center;
-      margin: 25px 25px 50px;
-      padding: 35px 20px;
-      border-radius: 18px;
-      background: #111d2f;
-      border: 1px solid #26364e;
-    }
+        .join {
+            text-align: center;
+            margin: 25px auto;
+            padding: 35px 20px;
+            border-radius: 18px;
+            background: #111d2f;
+            border: 1px solid #26364e;
+        }
 
-    footer {
-      border-top: 1px solid #26364e;
-      padding: 25px 0;
-      text-align: center;
-      color: #94a3b8;
-      font-size: 12px;
-    }
+        footer {
+            border-top: 1px solid #26364e;
+            padding: 25px 0;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 12px;
+        }
 
-    @media (max-width: 650px) {
-      .hero {
-        padding-top: 48px;
-      }
+        @media (max-width: 650px) {
+            .hero {
+                padding-top: 48px;
+            }
 
-      .cards {
-        grid-template-columns: 1fr;
-      }
+            .cards {
+                grid-template-columns: 1fr;
+            }
 
-      .card {
-        padding: 20px;
-      }
-    }
-  </style>
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <div class="container brand">
-      <div class="logo">📈</div>
-      <div>
-        CA NITIN MURARKA
-        <div style="font-size:11px;color:#94a3b8">
-          INDEX TRADING COMMUNITY
+    <header>
+        <div class="container brand">
+            <div class="logo">📈</div>
+            <div>
+                CA NITIN MURARKA
+                <div style="font-size:11px;color:#94a3b8">
+                    INDEX TRADING COMMUNITY
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="hero container">
-      <div class="tag">NIFTY 50 · BANK NIFTY</div>
+    <main>
+        <section class="hero container">
+            <div class="tag">NIFTY 50 · BANK NIFTY</div>
 
-      <h1>
-        Understand the Market.<br>
-        <span>Trade with Knowledge.</span>
-      </h1>
+            <h1>
+                Understand the Market.<br>
+                <span>Trade with Knowledge.</span>
+            </h1>
 
-      <p>
-        Explore index trading concepts, market insights
-        and educational updates. Join our Telegram
-        community and keep learning.
-      </p>
+            <p>
+                Explore index trading concepts, market insights
+                and educational updates. Join our Telegram
+                community and keep learning.
+            </p>
 
-      <a class="btn telegram-link"
-         href="https://t.me/+3QTIn_SEQV1kMzQ1"
-         target="_blank"
-         rel="noopener noreferrer">
-        ✈ Join Telegram Channel →
-      </a>
+            <a class="btn telegram-link" href="https://t.me/+3QTIn_SEQV1kMzQ1" target="_blank"
+                rel="noopener noreferrer">
+                ✈ Join Telegram Channel →
+            </a>
 
-      <div class="note">
-        Join the community on Telegram
-      </div>
+            <div class="note">
+                Join the community on Telegram
+            </div>
 
-      <div class="chart">
-        <div class="chart-title">
-          MARKET LEARNING · CANDLESTICK VISUAL
+            <div class="chart">
+                <div class="chart-title">
+                    MARKET LEARNING · CANDLESTICK VISUAL
+                </div>
+                <div class="candles" aria-label="Decorative candlestick chart">
+                    <span class="candle" style="height:35px"></span>
+                    <span class="candle red" style="height:55px"></span>
+                    <span class="candle" style="height:45px"></span>
+                    <span class="candle" style="height:75px"></span>
+                    <span class="candle red" style="height:40px"></span>
+                    <span class="candle" style="height:65px"></span>
+                    <span class="candle" style="height:90px"></span>
+                    <span class="candle red" style="height:55px"></span>
+                    <span class="candle" style="height:80px"></span>
+                    <span class="candle" style="height:100px"></span>
+                    <span class="candle red" style="height:68px"></span>
+                    <span class="candle" style="height:85px"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <h2>What You'll Learn</h2>
+
+            <div class="cards">
+                <article class="card">
+                    <div class="icon">📊</div>
+                    <h3>Nifty 50 Insights</h3>
+                    <p>
+                        Learn about index movements, market structure
+                        and relevant educational updates.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">📈</div>
+                    <h3>Bank Nifty Concepts</h3>
+                    <p>
+                        Explore candlestick charts, price action
+                        and intraday trading concepts.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">🎓</div>
+                    <h3>Trading Education</h3>
+                    <p>
+                        Build your understanding of market risks,
+                        analysis and disciplined decision-making.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container join">
+            <h2>Join Our Telegram Community</h2>
+            <p style="color:#aab8cc;margin-bottom:22px">
+                Take the next step in your market learning journey.
+            </p>
+
+            <a class="btn telegram-link" href="https://t.me/+3QTIn_SEQV1kMzQ1" target="_blank"
+                rel="noopener noreferrer">
+                ✈ Join Now — Telegram
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                Disclaimer: Content is for educational purposes only.
+                Stock market and derivatives trading involve substantial
+                risk. No profits or returns are guaranteed.
+            </p>
+            <p style="margin-top:12px">
+                © <span id="year"></span> CA Nitin Murarka · Index Trading
+            </p>
         </div>
-        <div class="candles" aria-label="Decorative candlestick chart">
-          <span class="candle" style="height:35px"></span>
-          <span class="candle red" style="height:55px"></span>
-          <span class="candle" style="height:45px"></span>
-          <span class="candle" style="height:75px"></span>
-          <span class="candle red" style="height:40px"></span>
-          <span class="candle" style="height:65px"></span>
-          <span class="candle" style="height:90px"></span>
-          <span class="candle red" style="height:55px"></span>
-          <span class="candle" style="height:80px"></span>
-          <span class="candle" style="height:100px"></span>
-          <span class="candle red" style="height:68px"></span>
-          <span class="candle" style="height:85px"></span>
-        </div>
-      </div>
-    </section>
+    </footer>
 
-    <section class="section container">
-      <h2>What You'll Learn</h2>
-
-      <div class="cards">
-        <article class="card">
-          <div class="icon">📊</div>
-          <h3>Nifty 50 Insights</h3>
-          <p>
-            Learn about index movements, market structure
-            and relevant educational updates.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="icon">📈</div>
-          <h3>Bank Nifty Concepts</h3>
-          <p>
-            Explore candlestick charts, price action
-            and intraday trading concepts.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="icon">🎓</div>
-          <h3>Trading Education</h3>
-          <p>
-            Build your understanding of market risks,
-            analysis and disciplined decision-making.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="container join">
-      <h2>Join Our Telegram Community</h2>
-      <p style="color:#aab8cc;margin-bottom:22px">
-        Take the next step in your market learning journey.
-      </p>
-
-      <a class="btn telegram-link"
-         href="https://t.me/+3QTIn_SEQV1kMzQ1"
-         target="_blank"
-         rel="noopener noreferrer">
-        ✈ Join Now — Telegram
-      </a>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>
-        Disclaimer: Content is for educational purposes only.
-        Stock market and derivatives trading involve substantial
-        risk. No profits or returns are guaranteed.
-      </p>
-      <p style="margin-top:12px">
-        © <span id="year"></span> CA Nitin Murarka · Index Trading
-      </p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-  </script>
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
 </body>
+
 </html>
